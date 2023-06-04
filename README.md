@@ -4,4 +4,4 @@
 ## Searching user by name or surname
 ## Viewing user profile
 ## Pull to refresh which generates new users
-## Theme : Ability to user dark or light mode
+## Theme : Ability to use dark or light mode
