@@ -16,12 +16,13 @@ export const userSlice = createSlice({
     },
 
     FilterUsers: (state, action) => {
-      //Update the state if the user deletes characters
+      //Update the state when the user deletes characters when searching
       if (state.users.length === 0) {
         state.users = state.copyUsers;
       }
 
       if (action.payload) {
+        //Filter by name or last name
         const filtered = [...state.users].filter((user) => {
           if (
             user.name.first
@@ -38,7 +39,7 @@ export const userSlice = createSlice({
         state.users = state.copyUsers;
       }
     },
-
+   //Toggle theme mode
     ChangeTheme: (state) => {
       state.darkMode = !state.darkMode;
     },
